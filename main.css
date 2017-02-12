@@ -1,0 +1,104 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #e5e5e5;
+}
+
+@font-face {
+    font-family: 'icons-set';
+    src: url('./assets/fontello/font/icons-set.eot?24032956');
+    src: url('./assets/fontello/font/icons-set.eot?24032956#iefix') format('embedded-opentype'),
+        url('./assets/fontello/font/icons-set.woff?24032956') format('woff'),
+        url('./assets/fontello/font/icons-set.ttf?24032956') format('truetype'),
+        url('./assets/fontello/font/icons-set.svg?24032956#icons-set') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+    
+    
+.demo-icon
+{
+    font-family: "icons-set";
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    color: #ffffff; 
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .5em;
+    font-size: 140%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#menu{
+    width: 100%;
+    height: 20px;
+}
+
+#menu i{
+    float: right;
+}
+
+#lyrics-loader
+{
+    font-family: "icons-set";
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    text-align: center;
+    opacity: 0.5;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    font-size: 200%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#track {
+    width: 100%;
+}
+
+#track-album-art{
+    width: 25%;
+    float: left;
+}
+
+#track-info{
+    width: 75%;
+    float: left;
+}
+
+#track-info{
+    font-size: 14px;
+    margin-top: 8px; 
+}
+
+#track-album-art-image {
+    height: 85px;
+    width: 85px;
+    margin: 2px;
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+}
+
+#lyrics-container{
+    margin: 30px 10px 5px 10px;
+    text-align: center;
+}
+
+.footer{
+    text-align: center
+}
+
+.footer a{
+    color: #838383
+}
