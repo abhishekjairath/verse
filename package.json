@@ -1,7 +1,7 @@
 {
   "name": "verse",
   "productName": "Verse",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "Mac menu bar lyrics app.",
   "dependencies": {
     "cheerio": "^0.22.0",
