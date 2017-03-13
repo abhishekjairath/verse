@@ -1,0 +1,40 @@
+{
+  "name": "icons-set",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "fda731b5a4026685e1a9c7e64228e2b2",
+      "css": "note",
+      "code": 59392,
+      "src": "entypo"
+    },
+    {
+      "uid": "f2a036a85c0a6a46b0c9709a70e1bb70",
+      "css": "album",
+      "code": 59393,
+      "src": "entypo"
+    },
+    {
+      "uid": "52177c3387cdac48d6ed18bebe84c34a",
+      "css": "headphones",
+      "code": 59394,
+      "src": "iconic"
+    },
+    {
+      "uid": "72109d2fb3088d0e66ea6a9204297651",
+      "css": "loader",
+      "code": 59440,
+      "src": "fontelico"
+    },
+    {
+      "uid": "c55fdf978f617992b43ee7cbaa6ef87e",
+      "css": "menu",
+      "code": 61448,
+      "src": "mfglabs"
+    }
+  ]
+}

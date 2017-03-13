@@ -1,0 +1,6 @@
+
+.icon-note:before { content: '\e800'; } /* '' */
+.icon-album:before { content: '\e801'; } /* '' */
+.icon-headphones:before { content: '\e802'; } /* '' */
+.icon-loader:before { content: '\e830'; } /* '' */
+.icon-menu:before { content: '\f008'; } /* '' */
