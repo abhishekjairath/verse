@@ -1,4 +1,4 @@
-var {ipcRenderer} = require('electron');
+var {ipcRenderer, shell} = require('electron');
 var request = require('request');
 var cheerio = require('cheerio');
 
@@ -28,6 +28,14 @@ function makeName(name){
     else return '';
 }
 
+function quitApp(){
+    ipcRenderer.send('quit');
+};
+
+function openBrowser(){
+    shell.openExternal('https://genius.com');
+}
+
 ipcRenderer.on('playbackStateChanged', (event, arg) => {  
     if(currentTrack == null || currentTrack['Track ID'] != arg['Track ID']){
         currentTrack = arg;
@@ -36,13 +44,17 @@ ipcRenderer.on('playbackStateChanged', (event, arg) => {
         document.getElementById('lyrics-loader').style.display = 'inline-block';        
         document.getElementById('name').innerText = currentTrack['Name'];
         document.getElementById('artist').innerText = currentTrack['Artist']; 
-        document.getElementById('album').innerText = currentTrack['Album']; 
-        
+        document.getElementById('album').innerText = currentTrack['Album'];
+        document.getElementById('footer').style.position = 'fixed';
+
         getLyrics(currentTrack['Name'], currentTrack['Artist'], function(lyrics, albumArt){
-            document.getElementById('lyrics').innerText = lyrics ? lyrics : 'Oops, lyrics not found.';
+            document.getElementById('lyrics').innerText = lyrics ? lyrics : '\n\rOops, lyrics not found.';
             document.getElementById('track-album-art-image').setAttribute('src', albumArt ? albumArt : './assets/default-album-art.png');
             document.getElementById('lyrics-loader').style.display = 'none';        
-            document.getElementById('lyrics').style.display = 'block';         
+            document.getElementById('lyrics').style.display = 'block';
+            if(lyrics){
+                document.getElementById('footer').style.position = 'relative';     
+            }
         }); 
     }    
 });

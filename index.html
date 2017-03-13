@@ -5,22 +5,29 @@
 <body>
   <link rel="stylesheet" href="./main.css" >
   <link rel="stylesheet" href="./assets/fontello/css/animation.css">
-  <div id="menu">
-    <i class="demo-icon icon-menu" onclick="renderMenu()">&#xf008;</i>
-  </div>
   <div id="track">
-    <div id="track-album-art"><img id="track-album-art-image" src="" /></div>
-    <div id="track-info"><i class="demo-icon icon-note">&#xe800;</i><span id="name"></span></div>
-    <div id="track-info"><i class="demo-icon icon-headphones">&#xe802;</i><span id="artist"></span><br></div>
-    <div id="track-info"><i class="demo-icon icon-album">&#xe801;</i><span id="album"></span><br></div>
+    <div id="track-album-art"><img id="track-album-art-image" src="./assets/default-album-art.png" /></div>
+    <div id="track-info">
+      <!--<i class="demo-icon icon-note">&#xe800;</i>-->
+      <span id="name"></span>
+    </div>
+    <div id="track-info">
+      <i class="demo-icon icon-headphones">&#xe802;</i>
+      <span id="artist"></span><br>
+    </div>
+    <div id="track-info">
+      <i class="demo-icon icon-album">&#xe801;</i>
+      <span id="album"></span><br>
+    </div>
   </div>
   <br><br><br>
   <div id="lyrics-container">
     <i id="lyrics-loader" class="icon-loader animate-spin">&#xe830;</i>    
     <span id="lyrics"></span>
   </div>
-  <div class="footer">
-    Lyrics powered by <a href="https://genius.com" target="_blank">Genius.com</a>
+  <div id="footer">
+    <span id="genius">Lyrics powered by <a href="" onclick="openBrowser()">Genius.com</a></span>
+    <span id="quitButton" onclick="quitApp()"> &nbsp;Quit</span>
   </div>
 <script src="./index.js" ></script>
 </body>
