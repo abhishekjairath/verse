@@ -1,18 +1,15 @@
 {
   "name": "verse",
   "productName": "Verse",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Mac menu bar lyrics app.",
   "dependencies": {
     "cheerio": "^0.22.0",
     "electron": "^1.4.15",
     "menubar": "*",
     "path": "^0.12.7",
-    "request": "^2.79.0"
-  },
-  "devDependencies": {
-    "electron-packager": "^5.1.0",
-    "electron-prebuilt": "^0.36.0"
+    "request": "^2.79.0",
+    "spotify-node-applescript": "*"
   },
   "main": "main.js",
   "scripts": {
