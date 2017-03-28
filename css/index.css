@@ -1,0 +1,63 @@
+svg:not(:root) {
+    overflow: hidden;
+}
+.octocat {
+    border: 0;
+    color: #fff;
+    fill: #DF9B25;
+    height: 5.2rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 5.2rem;
+    z-index: 1;
+}
+
+.octocat-arm, .octocat-body{
+    fill: #fff;
+}
+
+.container{
+    margin-top: 50px; 
+}
+
+.row{
+    justify-content: center !important;
+}
+
+.verse_icon{
+    height: 256px;
+}
+
+.button-yellow{
+    background-color:#DF9B25;
+    border-color: #DF9B25;
+    color: #fff;
+}
+
+.button-yellow:hover{
+    background-color: #fff;
+    color: #DF9B25;
+    border-color: #DF9B25 !important;
+    transition: background-color 0.5s ease;
+}
+
+.button-large{
+    font-size: 1.4rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    padding: 0 2rem;
+    font-weight: 500;
+}
+
+.footer{
+    margin-top:75px; 
+}
+
+.footer .row{
+    height: 40px;
+}
+
+.footer a{
+    color: #DF9B25;
+}
